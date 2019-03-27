@@ -1,6 +1,7 @@
 package com.chenkai.springbootdemo.demo.vo;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Author: chenkai
@@ -18,6 +19,10 @@ public class UserVO implements Serializable {
     private String mobile;
     // 密码
     private String password;
+    // 性别
+    private String sex;
+    // 创建日期
+    private Date createDate;
 
     public String getName() {
         return name;
@@ -49,5 +54,13 @@ public class UserVO implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
 }
